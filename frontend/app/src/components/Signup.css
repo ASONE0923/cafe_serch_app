@@ -1,0 +1,16 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.signup input {
+  margin-bottom: 10px;
+}
+
+.signup button {
+  cursor: pointer;
+}
