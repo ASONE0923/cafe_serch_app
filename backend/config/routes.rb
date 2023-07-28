@@ -1,3 +1,4 @@
+# config/routes.rb
 Rails.application.routes.draw do
   devise_for :users, skip: [:sessions, :registrations], defaults: { format: :json }
 
@@ -6,4 +7,6 @@ Rails.application.routes.draw do
     delete 'logout', to: 'sessions#destroy'
     post 'signup', to: 'registrations#create'
   end
+
+  post '/search', to: 'cafes#search'
 end
